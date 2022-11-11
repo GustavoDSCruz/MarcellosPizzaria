@@ -1,0 +1,24 @@
+body{
+    font: 1rem/1.5 'Poppins';
+    background-color: #FFFCEA;
+}
+
+.bg-green-marcellos{
+    background-color: #0C9A4D;
+}
+
+.banner-home{
+    height: auto; 
+    width: 55%; 
+    object-fit: cover;
+}
+.user-img{
+    height: 48px;
+    padding: 8px;
+}
+
+
+.card-home{
+    background-color: #861328;
+}
+
