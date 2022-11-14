@@ -1,6 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 body{
     font: 1rem/1.5 'Poppins';
     background-color: #FFFCEA;
+    
 }
 
 .bg-green-marcellos{
@@ -16,9 +21,22 @@ body{
     height: 48px;
     padding: 8px;
 }
-
+.img-slider{
+    height: 60vh; 
+    width: 100%; 
+    object-fit: cover;
+}
 
 .card-home{
     background-color: #861328;
+}
+
+.links-footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.links-footer a:hover{
+    color: black;
 }
 
