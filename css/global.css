@@ -8,6 +8,10 @@ body{
     
 }
 
+main{
+    min-height: 100vh;
+}
+
 .bg-green-marcellos{
     background-color: #0C9A4D;
 }
@@ -44,5 +48,4 @@ body{
     .marcellos-img{
         display: none;
     }
-
 }
