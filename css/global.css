@@ -30,6 +30,9 @@ main{
     width: 100%; 
     object-fit: cover;
 }
+.icard-color{
+    background-color: #861328;
+}
 
 .card-home{
     background-color: #861328;
