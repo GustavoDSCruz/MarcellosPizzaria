@@ -47,6 +47,26 @@ main{
     color: black;
 }
 
+.card-contato{
+    width: 40vw;
+}
+.input-assunto{
+    padding: 45px 0;
+}
+#main-promotion{
+    width: auto;
+}
+@media screen and (max-width:500px) {
+    #main-promotion{
+        width: 90%;
+    }
+}
+@media screen and (max-width:650px){
+    .card-contato{
+        width:100%;
+    }
+}
+
 @media screen and (max-width: 400px) {
     .marcellos-img{
         display: none;
