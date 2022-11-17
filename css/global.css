@@ -15,6 +15,9 @@ main{
 .bg-green-marcellos{
     background-color: #0C9A4D;
 }
+.gray{
+    background-color: #D9D9D9;
+}
 
 .banner-home{
     height: auto; 
@@ -55,6 +58,15 @@ main{
 }
 #main-promotion{
     width: auto;
+}
+.picImg{
+    height: 20vh;
+    width: auto;
+    object-fit: cover;
+    -webkit-border-radius: 75%;
+    -moz-border-radius: 75%;
+    -ms-border-radius: 75%;
+    -o-border-radius: 75%;
 }
 @media screen and (max-width:500px) {
     #main-promotion{
