@@ -59,6 +59,10 @@ main{
 #main-promotion{
     width: auto;
 }
+
+.memberCardInherit{
+    width: 15vw;
+}
 .picImg{
     height: 20vh;
     width: auto;
@@ -84,3 +88,15 @@ main{
         display: none;
     }
 }
+
+@media screen and (max-width:1500px){
+    .MemberCards{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .memberCardInherit{
+        width: 60vw;
+    }
+}
+
