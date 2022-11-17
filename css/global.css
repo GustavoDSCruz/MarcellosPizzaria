@@ -34,12 +34,13 @@ main{
     object-fit: cover;
 }
 .icard-color{
-    background-color: #861328;
+    background-color: #B41328;
 }
 
 .card-home{
-    background-color: #861328;
+    background-color: #B41328;
 }
+
 
 .links-footer a{
     text-decoration: none;
