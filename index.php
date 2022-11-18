@@ -11,20 +11,21 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/slider.css" />
     
-    <!--Bootstrap-->
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/global.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>    
 
-     <!--Poppins-->
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/back-to-top.css">
+
+     <!-- Font Poppins -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
- 
-
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-green-marcellos">
+    <nav class="navbar navbar-expand-lg bg-green-marcellos" id="navbar">
       <div class="container-fluid">
         <a class="navbar-brand ps-4 fs-3 fw-bold text-white fst-italic" href="index.html">Marcello's <!--<img src="assets/marcellos.png" class="marcellos-img img-fluid align-self-center h-50">--></a>
         
@@ -50,25 +51,27 @@
             </li>
   
           </ul>
-          <!--Busca-->
-          <!--<form class="d-flex" role="search">
+          <!-- Search -->
+          <!-- <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Pesquisar">
             <button class="btn-pesquisar btn btn-dark" type="submit">
               <img src="assets/search.png">
             </button>
-          </form>-->
+          </form> -->
        
       </div>
-      </nav>
+    </nav>
     
     <main class="p-5 d-flex flex-column">
       <h2 class="fs-1 fw-bolder">
           Bem vindo a Pizzaria Marcellos!
       </h2><br>
 
-      <h4 class="border-bottom">Recomendações</h4>
-      <div></div>
-      <!--Home Introduction-->
+      <h4>Recomendações</h4>
+
+      <hr>
+
+      <!-- Home Introduction -->
       <section class="py-5 d-inline-flex align-self-center" id="main-promotion">
         <div class="d-inline-flex justify-content-center ">
           <img src="assets/banner-home.jpg" class="banner-home img-fluid rounded">
@@ -85,11 +88,13 @@
           </div>
         </div>
       </section>
-      <!--End of Home Introduction-->
+      <!-- End of Home Introduction -->
 
-      <h2 class="fs-2 fw-semibold border-bottom">Promoções da semana</h2>
+      <h2 class="fs-2 fw-semibold">Promoções da semana</h2>
+
+      <hr>
       
-      <!--Slider-->
+      <!-- Slider -->
        <section class="cards-slider">
         <div class="container swiper">
 
@@ -196,7 +201,14 @@
           <div class="swiper-pagination"></div>
         </div>
       </section>
-      <!--End of Slider-->
+      <!-- End of Slider -->
+
+      <!-- Back to top button -->
+      <section class="d-none" id="back-to-top">
+        <a href="#navbar" class="back-to-top-button rounded-circle bg-success d-flex justify-content-center align-items-center">
+          <img src="./assets/arrow-top-icon.png" alt="">
+        </a>
+      </section>
 
     </main>
       
@@ -209,7 +221,7 @@
         <div class="container p-3 pb-0">
           <!-- Section: Links -->
           <section class="">
-            <!--Grid row-->
+            <!-- Grid row -->
             <div class="row">
               <!-- Grid column -->
               <div class="col-md-1 col-lg-5 col-xl-3 mx-auto mt-3">
@@ -237,7 +249,7 @@
                 <a class="px-2" target="_blank" href="https://instagram.com"><img class="img-fluid" src="assets/footer/instagram.png"></a>
                 <a class="px-2" target="_blank" href="https://twitter.com"><img class="img-fluid" src="assets/footer/twitter.png"></a>
             </div>
-            <!--Grid row-->
+            <!-- Grid row -->
           </section>
           <!-- Section: Links -->
         
@@ -274,11 +286,15 @@
         </div>
         <!-- Grid container -->
       </footer> 
-      <!--End ofFooter-->
+      <!-- End of Footer -->
     
-    
-      <!--Slider Scripts-->  
+    <!-- JS  -->
+
+    <!-- Slider Scripts -->  
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+
+    <!-- Script to show back to top button -->
+    <script src="./js/scroll.js"></script>
   </body>
 </html>
