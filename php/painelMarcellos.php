@@ -1,4 +1,6 @@
-
+<?php 
+    include_once 'Invalido.php';
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,11 +11,6 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-        if(!isset($_SESSION['nome'])) {
-            die("Você não pode acessar esta página porque não está logado.<p class=\"d-inline-flex justify-content-center\"> <a class=\"text-black text-decoration-none\" href=\"Login.php\">Voltar</a></p>");
-        }
-    ?>
 <nav class="navbar navbar-expand-lg bg-green-marcellos" id="navbar">
       <div class="container-fluid">
         <a class="navbar-brand ps-4 fs-3 fw-bold text-white fst-italic" href="../index.html">Marcello's <!--<img src="assets/marcellos.png" class="marcellos-img img-fluid align-self-center h-50">--></a>
@@ -31,9 +28,14 @@
             <li class="nav-item align-self-start">
               <a class="nav-link active fw-light text-white" href="logout.php">Sair</a>
             </li>
-  
           </ul>
       </div>
 </nav>
+<main class="p-5 d-flex flex-column align-items-center">
+    
+
+</main>
+
+
 </body>
 </html>
