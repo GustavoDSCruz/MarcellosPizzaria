@@ -1,28 +1,28 @@
 <?php
 include_once 'conectar.php';
 
-class Usuario
+class usuario
 {
-	private $usu;
-	private $senha;
+	private $Login;
+	private $Senha;
 	private $conn;
 	
-	public function getUsu()
+	public function getLogin()
 	{
-		return $this->usu;
+		return $this->Login;
 	}
-	public function setUsu($usuario)
+	public function setLogin($login)
 	{
-		$this->usu = $usuario;
+		$this->Login = $login;
 	}
 	
 	public function getSenha()
 	{
-		return $this->senha;
+		return $this->Senha;
 	}
 	public function setSenha($senha)
 	{
-		$this->senha = $senha;
+		$this->Senha = $senha;
 	}
 	
 	function logar()
@@ -30,8 +30,8 @@ class Usuario
 		try
 		{
 			$this-> conn = new Conectar();
-			$sql = $this->conn->prepare("SELECT * FROM usuario WHERE login LIKE ? and senha = ?");
-			@$sql-> bindParam(1, $this->getUsu(), PDO::PARAM_STR);
+			$sql = $this->conn->prepare("SELECT * FROM usuario WHERE Login LIKE ? and Senha = ?");
+			@$sql-> bindParam(1, $this->getLogin(), PDO::PARAM_STR);
 			@$sql-> bindParam(2, $this->getSenha(), PDO::PARAM_STR);
 			$sql->execute();
 			return $sql->fetchAll();

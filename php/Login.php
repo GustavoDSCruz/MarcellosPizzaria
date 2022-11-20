@@ -24,52 +24,73 @@
      <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
 
-    <script language=javascript>
-		
-		function blokletras(keypress)
-		{
-			if(keypress>=48 && keypress<=57)
-			{
-				return true;
-			}
-			else
-			{
-				return false;
-			}
-		}
-		</script>
 
 </head>
 <body>
-
-        <div class="header">
+<nav class="navbar navbar-expand-lg bg-green-marcellos" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand ps-4 fs-3 fw-bold text-white fst-italic" href="../index.html">Marcello's <!--<img src="assets/marcellos.png" class="marcellos-img img-fluid align-self-center h-50">--></a>
         
-            <!--Content before waves-->
-            <div class="inner-header flex">
-			<form name="cliente" method="POST" action="">
-			  <div class="mb-3">
-			    <label for="exampleInputEmail1" class="form-label">Email address</label>
-			    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="txtnome" size="8" maxlength="5" placeholder="Nome" required>
-			    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-			  </div>
-			  <div class="mb-3">
-			    <label for="exampleInputPassword1" class="form-label">Password</label>
-			    <input type="password" class="form-control" id="exampleInputPassword1" name="txtsenha" size="5" maxlength="3" placeholder="000" onkeypress="return blokletras(window.event.keyCode)" required>
-			  </div>
-			  <div class="mb-3 form-check">
-			    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-			    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-			  </div>
-			  <button type="submit" class="btn btn-primary" name="btnconsultar" type="submit">Consultar</button>
-			</form>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        
+          <ul class=" collapse navbar-collapse navbar-nav justify-content-end me-auto mb-2 mb-lg-0 " id="navbarSupportedContent">
             
+            <li class="nav-item align-self-start">
+              <a class="nav-link active fs-5 fw-light text-white" href="../cardapio.html">Cardápio</a>
+            </li>
+            
+            <li class="nav-item align-self-start">
+              <a class="nav-link active fs-5 fw-light text-white" href="../sobre.html">Quem somos</a>
+            </li>
+            <li class="nav-item align-self-start">
+              <a class="nav-link active fs-5 fw-light text-white" href="../equipe.html">Nossa Equipe</a>
+            </li>
+            <li class="nav-item align-self-start">
+              <a class="nav-link active fs-5 fw-light text-white" href="../contato.html">Fale Conosco</a>
+            </li>
+            <li class="nav-item align-self-start">
+              <a class="nav-link active fw-light text-white" href="php/Login.php"><img src="../assets/user.png" style="height: 16px;" ></a>
+            </li>
+  
+          </ul>
+          <!-- Search -->
+          <!-- <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Pesquisar">
+            <button class="btn-pesquisar btn btn-dark" type="submit">
+              <img src="assets/search.png">
+            </button>
+          </form> -->
+       
+      </div>
+    </nav>
+	<main class="p-5 d-flex flex-column align-items-center">
+	<form class="card-contato card icard-color py-5 d-flex flex-column align-items-center" name="cliente" method="POST" action="">
+          <div class="text-center  border-bottom border-white" style="width: 80%;" >
+            <h5 class="card-title text-white fs-3 fw-semibold ">Acesso ao Painel de Administrador</h5>
+          </div>
+          <div class="d-flex flex-column align-items-stretch py-4" style="width: 80%;">
+            <div class="mt-4">
+              <label class="form-label text-white">Usuário</label>
+              <input type="text" name="txtnome" class="form-control" required name="txtnome" size="8" maxlength="5" required>
+            </div>
+            <div class="mt-4">
+              <label for="exampleInputEmail1" class="form-label text-white">Senha</label>
+              <input type="password" name="txtsenha" class="form-control" id="exampleInputPassword1" aria-describedby="emailHelp" size="5" maxlength="3" required>
+            </div>
+          </div>
+          <button type="submit" name="btnconsultar" class="btn btn-dark mt-5" style="width: 50%;">Enviar</button>
+        </form> 
+
 		<?php
 		extract($_POST, EXTR_OVERWRITE);
 		if(isset($btnconsultar))
 		{
 			include_once 'Usuario.php';
-			$u = new Usuario();
-			$u->setUsu($txtnome);
+			$u = new usuario();
+			$u->setLogin($txtnome);
 			$u->setSenha($txtsenha);
 			$pro_bd=$u->logar();
 			
@@ -79,7 +100,10 @@
 				$existe = true;
 				?>
 					<br><b> <?php echo "Bem vindo! Usuário: ".$pro_mostrar[0]; ?></b> <br><br> 
-                    <?php header("location:../index.html"); ?>
+					<?php  
+						$_SESSION['nome'] = $txtnome;
+					?>
+          			<button type="submit" class="btn btn-dark mt-5"><a class="fs-4 text-white" style="text-decoration:none;" href="painelMarcellos.php">Entrar</a></button>
 				<?php
 			}
 		if($existe==false)
@@ -88,35 +112,7 @@
 		}
 		
 		}
-	?>
-
-            <!--Just the logo.. Don't mind this-->
-
-            </div>
-            <div>
-                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                <defs>
-                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                </defs>
-                <g class="parallax">
-                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-                </g>
-                </svg>
-                </div>
-                <!--Waves end-->
-                
-                </div>
-                <!--Header ends-->
-                
-                <!--Content starts-->
-                <div class="content flex">
-                  <p>By.Apenas o Lima</p>
-                </div>
-                <!--Content ends-->            
-   
+	?>    
+	</main>     
   </body>
 </html>
