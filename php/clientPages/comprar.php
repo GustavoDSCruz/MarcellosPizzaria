@@ -96,6 +96,7 @@
                         <?php foreach($pro_bd as $pro_mostrar)
                         { ?>
                             <option value="<?php echo $pro_mostrar[0];?>"><?php echo $pro_mostrar[1]; ?></option>
+                            <option value="<?php echo $pro_mostrar[0];?>"><?php echo  $pro_mostrar[1]; ?></option>
                         <?php } ?>
                     </select>
                 </div>

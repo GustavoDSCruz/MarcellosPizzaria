@@ -1,3 +1,8 @@
+<?php
+  session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -51,6 +56,9 @@
             </li>
             <li class="nav-item align-self-start">
               <a class="nav-link active fw-light text-white" href="php/login/Login.php"><img src="assets/user.png" style="height: 32px;"></a>
+            </li>
+            <li class="nav-item align-self-start">
+              <a class="nav-link active fw-light text-white" href=""><img src="assets" alt=""></a>
             </li>
   
           </ul>
@@ -207,7 +215,7 @@
 
       <!-- Back to top button -->
       <section class="d-none" id="back-to-top">
-        <a href="#navbar" class="back-to-top-button rounded-circle bg-success d-flex justify-content-center align-items-center">
+        <a href="#navbar" class="back-to-top-button rounded-circle bg-green-marcellos d-flex justify-content-center align-items-center">
           <img src="./assets/arrow-top-icon.png" alt="">
         </a>
       </section>
