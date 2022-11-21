@@ -52,7 +52,7 @@
               <a class="nav-link active fs-5 fw-light text-white" href="../clientPages/contato.html">Fale Conosco</a>
             </li>
             <li class="nav-item align-self-start">
-              <a class="nav-link active fw-light text-white" href="../login/Login.php"><img src="../../assets/user.png" style="height: 32px;" ></a>
+              <a class="nav-link active fw-light text-white" href="Login.php"><img src="../../assets/user.png" style="height: 32px;" ></a>
             </li>
   
           </ul>

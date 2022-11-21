@@ -78,7 +78,10 @@
             <div class="profile-details">
               
               <div class="name-job">
-                <h3 class="fs-3 fw-semibold text-center text-white "><?php echo $pro_mostrar[1]; ?></h3>
+                <h3 class="fs-3 fw-semibold text-center text-white ">
+                  <input type="hidden" name="optPizza" value='<?php echo $pro_mostrar[1]; ?>'>
+                  <?php echo $pro_mostrar[1]; ?>
+                </h3>
               </div>
             </div>
             <div class="image-box">
