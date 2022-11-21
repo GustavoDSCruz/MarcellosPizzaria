@@ -27,7 +27,7 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-green-marcellos" id="navbar">
       <div class="container-fluid">
-        <a class="navbar-brand ps-4 fs-3 fw-bold text-white fst-italic" href="index.html">Marcello's <!--<img src="assets/marcellos.png" class="marcellos-img img-fluid align-self-center h-50">--></a>
+        <a class="navbar-brand ps-4 fs-3 fw-bold text-white fst-italic" href="index.php">Marcello's <!--<img src="assets/marcellos.png" class="marcellos-img img-fluid align-self-center h-50">--></a>
         
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -37,7 +37,7 @@
           <ul class=" collapse navbar-collapse navbar-nav justify-content-end me-auto mb-2 mb-lg-0 " id="navbarSupportedContent">
             
             <li class="nav-item align-self-start">
-              <a class="nav-link active fs-5 fw-light text-white" href="php/cardapio.php">Cardápio</a>
+              <a class="nav-link active fs-5 fw-light text-white" href="php/clientPages/cardapio.php">Cardápio</a>
             </li>
             
             <li class="nav-item align-self-start">
@@ -47,21 +47,13 @@
               <a class="nav-link active fs-5 fw-light text-white" href="equipe.html">Nossa Equipe</a>
             </li>
             <li class="nav-item align-self-start">
-              <a class="nav-link active fs-5 fw-light text-white" href="contato.html">Fale Conosco</a>
+              <a class="nav-link active fs-5 fw-light text-white" href="php/clientPages/contato.php">Fale Conosco</a>
             </li>
             <li class="nav-item align-self-start">
-              <a class="nav-link active fw-light text-white" href="php/Login.php"><img src="assets/user.png" style="height: 16px;" ></a>
+              <a class="nav-link active fw-light text-white" href="php/login/Login.php"><img src="assets/user.png" style="height: 32px;"></a>
             </li>
   
           </ul>
-          <!-- Search -->
-          <!-- <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Pesquisar">
-            <button class="btn-pesquisar btn btn-dark" type="submit">
-              <img src="assets/search.png">
-            </button>
-          </form> -->
-       
       </div>
     </nav>
     
@@ -86,7 +78,7 @@
                   </p>                        
               </div>
               <div class="card-body d-flex justify-content-center align-items-start pb-5">
-                <button type="button" class="banner-home-button btn bg-white" ><a class="text-black text-decoration-none fs-3" href="">Comprar</a></button>
+                <button type="button" class="banner-home-button btn bg-white" ><a class="text-black text-decoration-none fs-3" href="php/clientPages/comprar.php">Comprar</a></button>
               </div>
           </div>
         </div>
@@ -117,7 +109,7 @@
                 <div class="image-box">
                   <img src="assets/home-slider/segunda.png"/>
                 </div>
-                <button type="submit" class="btn btn-dark mt-5" style="width: 100%;" ><a class="fs-4 text-white" style="text-decoration:none;" href="compra.php">Comprar</a></button>
+                <button type="submit" class="btn btn-dark mt-5" style="width: 100%;" ><a class="fs-4 text-white" style="text-decoration:none;" href="php/clientPages/comprar.php">Comprar</a></button>
               </div>
               <div class="card swiper-slide d-flex flex-column justify-content-between align-items-center">
 
@@ -131,6 +123,7 @@
                 <div class="image-box d">
                   <img src="assets/home-slider/terca.png"/>
                 </div>
+                <button type="submit" class="btn btn-dark mt-5" style="width: 100%;" ><a class="fs-4 text-white" style="text-decoration:none;" href="php/clientPages/comprar.php">Comprar</a></button>
               </div>
               <div class="card swiper-slide d-flex flex-column justify-content-between align-items-center">
 
@@ -144,6 +137,7 @@
                 <div class="image-box">
                   <img src="assets/home-slider/quarta.png"/>
                 </div>
+                <button type="submit" class="btn btn-dark mt-5" style="width: 100%;" ><a class="fs-4 text-white" style="text-decoration:none;" href="php/clientPages/comprar.php">Comprar</a></button>
               </div>
               <div class="card swiper-slide d-flex flex-column justify-content-between align-items-center">
 
@@ -157,6 +151,7 @@
                 <div class="image-box">
                   <img src="assets/home-slider/quinta.png"/>
                 </div>
+                <button type="submit" class="btn btn-dark mt-5" style="width: 100%;" ><a class="fs-4 text-white" style="text-decoration:none;" href="php/clientPages/comprar.php">Comprar</a></button>
               </div>
               <div class="card swiper-slide d-flex flex-column justify-content-between align-items-center">
 
@@ -170,6 +165,7 @@
                 <div class="image-box">
                   <img src="assets/home-slider/sexta.png"/>
                 </div>
+                <button type="submit" class="btn btn-dark mt-5" style="width: 100%;" ><a class="fs-4 text-white" style="text-decoration:none;" href="php/clientPages/comprar.php">Comprar</a></button>
               </div>
               <div class="card swiper-slide d-flex flex-column justify-content-between align-items-center">
 
@@ -183,6 +179,7 @@
                 <div class="image-box">
                   <img src="assets/home-slider/sabado.png"/>
                 </div>
+                <button type="submit" class="btn btn-dark mt-5" style="width: 100%;" ><a class="fs-4 text-white" style="text-decoration:none;" href="php/clientPages/comprar.php">Comprar</a></button>
               </div>
               <div class="card swiper-slide d-flex flex-column justify-content-between align-items-center">
 
@@ -196,6 +193,7 @@
                 <div class="image-box">
                   <img src="assets/home-slider/domingo.png"/>
                 </div>
+                <button type="submit" class="btn btn-dark mt-5" style="width: 100%;" ><a class="fs-4 text-white" style="text-decoration:none;" href="php/clientPages/comprar.php">Comprar</a></button>
               </div>
               
             </div>
@@ -225,7 +223,7 @@
         <div class="container p-3 pb-0">
           <!-- Section: Links -->
           <section class="">
-            <!-- Grid row -->
+            <!--Grid row-->
             <div class="row">
               <!-- Grid column -->
               <div class="col-md-1 col-lg-5 col-xl-3 mx-auto mt-3">
@@ -234,7 +232,7 @@
                 </h6>
                 <p class="text-start links-footer fs-6">
                   Descubra e explore sabores que te darão água
-                  na boca! <a class="fw-semibold" href="cardapio.html">Cardápio</a> 
+                  na boca! <a class="fw-semibold" href="php/clientPages/cardapio.php">Cardápio</a> 
                 </p>
               </div>
             
@@ -243,17 +241,16 @@
                 <h6 class="text-uppercase fs-4 mb-4 font-weight-bold">Nossa Equipe</h6>
                 <p class="text-start links-footer fs-6">
                   Quem são os fundadores e colaboradores da Marcellos?
-                  <a class="fw-semibold" href="cardapio.html">Nossa Equipe</a> 
+                  <a class="fw-semibold" href="equipe.html">Nossa Equipe</a> 
                 </p>
               </div>
             
               <!-- Grid column -->
               <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mt-3">
                 <h6 class="text-uppercase fs-5 mb-4 font-weight-bold">Nossas redes sociais</h6>
-                <a class="px-2" target="_blank" href="https://instagram.com"><img class="img-fluid" src="assets/footer/instagram.png"></a>
-                <a class="px-2" target="_blank" href="https://twitter.com"><img class="img-fluid" src="assets/footer/twitter.png"></a>
+                <a class="px-2" target="_blank" href="https://www.instagram.com/pizzaria_marcellos/"><img class="img-fluid" src="assets/footer/instagram.png"></a>
             </div>
-            <!-- Grid row -->
+            <!--Grid row-->
           </section>
           <!-- Section: Links -->
         
@@ -277,11 +274,9 @@
                   Quem somos
                 </a>
 
-                <a class="fs-5 px-2" href="contato.html">
+                <a class="fs-5 px-2" href="php/clientPages/contato.php">
                   Ajuda
                 </a>
-
-                <a class="fs-5 px-2">(11)3787-9728</a>
               </div>
               <!-- Grid column -->
             </div>
@@ -289,7 +284,7 @@
           <!-- Section: Copyright -->
         </div>
         <!-- Grid container -->
-      </footer> 
+      </footer>
       <!-- End of Footer -->
     
     <!-- JS  -->

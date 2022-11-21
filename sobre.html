@@ -18,7 +18,7 @@
      <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-green-marcellos">
+  <nav class="navbar navbar-expand-lg bg-green-marcellos" id="navbar">
     <div class="container-fluid">
       <a class="navbar-brand ps-4 fs-3 fw-bold text-white fst-italic" href="index.php">Marcello's <!--<img src="assets/marcellos.png" class="marcellos-img img-fluid align-self-center h-50">--></a>
       
@@ -30,7 +30,7 @@
         <ul class=" collapse navbar-collapse navbar-nav justify-content-end me-auto mb-2 mb-lg-0 " id="navbarSupportedContent">
           
           <li class="nav-item align-self-start">
-            <a class="nav-link active fs-5 fw-light text-white" href="cardapio.html">Cardápio</a>
+            <a class="nav-link active fs-5 fw-light text-white" href="php/clientPages/cardapio.php">Cardápio</a>
           </li>
           
           <li class="nav-item align-self-start">
@@ -40,20 +40,15 @@
             <a class="nav-link active fs-5 fw-light text-white" href="equipe.html">Nossa Equipe</a>
           </li>
           <li class="nav-item align-self-start">
-            <a class="nav-link active fs-5 fw-light text-white" href="contato.html">Fale Conosco</a>
+            <a class="nav-link active fs-5 fw-light text-white" href="php/clientPages/contato.php">Fale Conosco</a>
+          </li>
+          <li class="nav-item align-self-start">
+            <a class="nav-link active fw-light text-white" href="php/login/Login.php"><img src="assets/user.png" style="height: 32px;"></a>
           </li>
 
         </ul>
-        <!--Busca-->
-        <!--<form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Pesquisar">
-          <button class="btn-pesquisar btn btn-dark" type="submit">
-            <img src="assets/search.png">
-          </button>
-        </form>-->
-     
     </div>
-    </nav>
+  </nav>
 
     <main class="p-5 d-flex flex-column align-items-center">
         <h5 class="fw-lighter">Quem Somos</h5>
@@ -123,8 +118,7 @@
               <!-- Grid column -->
               <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mt-3">
                 <h6 class="text-uppercase fs-5 mb-4 font-weight-bold">Nossas redes sociais</h6>
-                <a class="px-2" target="_blank" href="https://instagram.com"><img class="img-fluid" src="assets/footer/instagram.png"></a>
-                <a class="px-2" target="_blank" href="https://twitter.com"><img class="img-fluid" src="assets/footer/twitter.png"></a>
+                <a class="px-2" target="_blank" href="https://www.instagram.com/pizzaria_marcellos/"><img class="img-fluid" src="assets/footer/instagram.png"></a>
             </div>
             <!--Grid row-->
           </section>
@@ -154,14 +148,13 @@
                   Ajuda
                 </a>
 
-                <a class="fs-5 px-2">(11)3787-9728</a>
               </div>
               <!-- Grid column -->
             </div>
           </section>
           <!-- Section: Copyright -->
         </div>
+      </footer>
         <!-- Grid container -->
-    </footer>
 </body>
 </html>

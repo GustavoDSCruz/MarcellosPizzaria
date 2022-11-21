@@ -1,7 +1,7 @@
 <?php
-include_once 'conectar.php';
+    include_once '../conexao/conectar.php';
 
-class usuario
+class admin
 {
 	private $Login;
 	private $Senha;
@@ -30,7 +30,7 @@ class usuario
 		try
 		{
 			$this-> conn = new Conectar();
-			$sql = $this->conn->prepare("SELECT * FROM usuario WHERE Login LIKE ? and Senha = ?");
+			$sql = $this->conn->prepare("SELECT * FROM admin WHERE Login LIKE ? and Senha = ?");
 			@$sql-> bindParam(1, $this->getLogin(), PDO::PARAM_STR);
 			@$sql-> bindParam(2, $this->getSenha(), PDO::PARAM_STR);
 			$sql->execute();
