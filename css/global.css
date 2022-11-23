@@ -1,54 +1,118 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-body{
+
+body {
     font: 1rem/1.5 'Poppins';
     background-color: #FFFCEA;
     
 }
 
-main{
+main {
     min-height: 100vh;
 }
 
-.bg-green-marcellos{
+hr {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(90deg, black, white, white);
+}
+
+.bg-green-marcellos {
     background-color: #0C9A4D;
 }
 
-.banner-home{
+.gray {
+    background-color: #D9D9D9;
+}
+
+.banner-home {
     height: auto; 
     width: 55%; 
     object-fit: cover;
 }
-.user-img{
+
+.user-img {
     height: 48px;
     padding: 8px;
 }
-.img-slider{
+
+.img-slider {
     height: 60vh; 
     width: 100%; 
     object-fit: cover;
 }
-.icard-color{
-    background-color: #861328;
+
+.icard-color {
+    background-color: #B41328;
 }
 
-.card-home{
-    background-color: #861328;
+.card-home {
+    background-color: #B41328;
 }
 
-.links-footer a{
+.links-footer a {
     text-decoration: none;
     color: white;
 }
 
-.links-footer a:hover{
+.links-footer a:hover {
     color: black;
 }
 
+.card-contato {
+    width: 40vw;
+}
+
+.input-assunto {
+    padding: 45px 0;
+}
+
+#main-promotion {
+    width: auto;
+}
+
+.memberCardInherit {
+    width: 15vw;
+}
+
+.picImg {
+    height: 20vh;
+    width: auto;
+    object-fit: cover;
+    -webkit-border-radius: 75%;
+    -moz-border-radius: 75%;
+    -ms-border-radius: 75%;
+    -o-border-radius: 75%;
+}
+
+@media screen and (max-width:500px) {
+    #main-promotion {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .card-contato {
+        width:100%;
+    }
+}
+
 @media screen and (max-width: 400px) {
-    .marcellos-img{
+    .marcellos-img {
         display: none;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    .MemberCards {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .memberCardInherit {
+        width: 60vw;
     }
 }
