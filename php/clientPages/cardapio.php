@@ -33,7 +33,9 @@
       <ul class=" collapse navbar-collapse navbar-nav justify-content-end me-auto mb-2 mb-lg-0 " id="navbarSupportedContent">
         
         <li class="nav-item align-self-start">
-          <a class="nav-link active fs-5 fw-light text-white" href="../clientPages/cardapio.php">Cardápio</a>
+
+          <a class="nav-link active fs-5 fw-bold text-white" href="../clientPages/cardapio.php">Cardápio</a>
+
         </li>
         
         <li class="nav-item align-self-start">
@@ -61,19 +63,31 @@
   </nav>
 
     <main class="p-5 d-flex flex-column">
+
+    <h5 class="fs-5 fw-light text-center">Cardápio</h5>
+
+<h2 class="fs-1 fw-bolder text-center">
+    Confira as Opções Disponiveis!<hr></h2><br>
         <?php 
-             include_once '../models/pizza.php';
-             $p= new pizza();
+             include_once '../models/saborPizza.php';
+             $p= new saborPizza();
              $pro_bd=$p->listar();
         ?>
-        <div class="container-fluid d-flex flex-wrap gap-2 justify-content-center">
+        <div class="container-fluid d-flex flex-wrap gap-5 justify-content-center">
+
           
           <?php
          
          foreach($pro_bd as $pro_mostrar)
          {
            ?>
-          <div class="card swiper-slide d-flex flex-column justify-content-between align-items-center p-2 icard-color" style="width: 18rem;">
+
+          <div class="card swiper-slide d-flex flex-column justify-content-between align-items-center icard-color border-0 rounded-5" style="width: 18rem;">
+
+          <div class="image-box">
+                <img src="<?php echo $pro_mostrar[2]; ?> " >             
+            </div>
+
 
             <div class="profile-details">
               
@@ -83,11 +97,14 @@
                 </h3>
               </div>
             </div>
-            <div class="image-box">
-                <img src="<?php echo $pro_mostrar[2]; ?> " >             
-            </div>
+
+
             <div class="mt-3 text-white">
               <p class="text-center"><?php echo $pro_mostrar[3];?></p>
+            </div>
+            <div class="mt-3 text-white">
+              <p class="text-center fs-3 fw-semibold "><?php echo "R$" . $pro_mostrar[4] . ",00" ;?></p>
+
             </div>
           </div>
           <?php
@@ -102,7 +119,9 @@
     
     <footer
               class="text-center container-fluid  text-lg-start text-white"
-              style="background-color: #0C9A4D"
+
+              style="background-color: #0FBA59"
+
               >
         <!-- Grid container -->
         <div class="container p-3 pb-0">
