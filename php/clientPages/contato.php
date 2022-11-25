@@ -39,7 +39,9 @@
           <a class="nav-link active fs-5 fw-light text-white" href="../../equipe.html">Nossa Equipe</a>
         </li>
         <li class="nav-item align-self-start">
+
           <a class="nav-link active fs-5 fw-bold text-white" href="contato.php">Fale Conosco</a>
+
         </li>
         <li class="nav-item align-self-start">
           <a class="nav-link active fw-light text-white" href="../login/Login.php"><img src="../../assets/user.png" style="height: 32px;" ></a>
@@ -51,7 +53,9 @@
 
     <main class="p-5 d-flex flex-column align-items-center">
         <h4 class="text-center fs-6 fw-light" >Contato</h4>
+
         <h2 class="text-center fs-2 fw-bold "> Entre em contato conosco<hr></h2>
+
         <h3 class="text-center fs-4 fw-lighter">Preencha as informações abaixo e enviaremos uma resposta!</h3>
 
         <br>
@@ -100,7 +104,9 @@
     
     <footer
               class="text-center container-fluid  text-lg-start text-white"
+
               style="background-color: #0FBA59"
+
               >
         <!-- Grid container -->
         <div class="container p-3 pb-0">

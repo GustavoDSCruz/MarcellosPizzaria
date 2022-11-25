@@ -60,6 +60,7 @@
       </form>--> 
     </div>
   </nav>
+
   
   <main class="p-5 d-flex flex-column align-items-center">
   <h5 class="fs-5 fw-light text-center">Compra</h5>
@@ -80,6 +81,7 @@
       $beb_bd=$p->listar();
 
       ?>
+
         <form name="compra" action="" method="POST" class="card-contato card icard-color py-5 d-flex flex-column align-items-center">
           <div class="text-center  border-bottom border-white" style="width: 80%;" >
             <h5 class="card-title text-white fs-3 fw-semibold ">Finalizar Pedido</h5>
@@ -94,19 +96,20 @@
                   <input type="text" name="txttel" class="form-control" required placeholder="Exemplo: (11)999999999">
                 </div>
                 <div class="mt-4">
+
                   <label class="form-label text-white">CPF</label>
                   <input type="text" name="txtcpf" class="form-control" required placeholder="Exemplo: 21312345530">
                 </div>
                 <div class="mt-4">
                   <label class="form-label text-white">Endereco</label>
                   <input type="text" name="txtEnd" class="form-control" required placeholder="Exemplo: Rua Solimões, bairro Lima">
+
                 </div>
                 <div class="mt-4">
                   <label class="form-label text-white">Complemento</label>
                   <input type="text" name="txtcomp" class="form-control" required placeholder="Número 37, Bloco A, Apartamento 03">
                 </div>
                 
-
                 <div class="mt-4">
                 <p class="form-label text-white fw-semibold">Monte sua pizza...</p>
 
@@ -147,6 +150,7 @@
           <input type="submit" name="btnenviar" class="CompraBTN btn btn-dark mt-5" value="Enviar" style="width: 50%;">
           
             
+
         </form> 
         <?php
 	
@@ -169,6 +173,7 @@
               $pro->setPreco($txtBebida);
           
               echo "<h1><br><br>" . $pro->cadastrar() . " Preço: R$". ((intval($pro->getP_saborPizza1()) + intval($pro->getP_saborPizza2()))/2 + intval($pro->getPreco())) . ",00" . "</h1><br>" . "<h2> Pagamento com entregador e contato por telefone!</h2>" ;
+
           }
 	
         ?>
@@ -177,6 +182,7 @@
   <footer
               class="text-center container-fluid  text-lg-start text-white"
               style="background-color: #0FBA59"
+
               >
         <!-- Grid container -->
         <div class="container p-3 pb-0">
@@ -243,8 +249,7 @@
           <!-- Section: Copyright -->
         </div>
         <!-- Grid container -->
+
   </footer> 
 </body>
-  
-    
 </html>

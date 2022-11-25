@@ -1,4 +1,5 @@
 -- phpMyAdmin SQL Dump
+
 -- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
@@ -6,6 +7,7 @@
 -- Tempo de geração: 23-Nov-2022 às 01:10
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 8.1.2
+
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -22,6 +24,7 @@ SET time_zone = "+00:00";
 --
 CREATE DATABASE IF NOT EXISTS `marcellos` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE `marcellos`;
+
 --
 
 -- --------------------------------------------------------
@@ -57,6 +60,7 @@ INSERT INTO `bebidas` (`id`, `nome`, `imagem`, `descricao`, `preco`) VALUES
 (12, 'Refrigerante Pepsi Zero Açúcar 2L', 'https://static.clubeextra.com.br/img/uploads/1/248/12906248.jpg', 'Refrigerante de 2 L.\r\n',  15),
 (13, 'Refrigerante Pepsi Twist 2L', 'https://static.paodeacucar.com/img/uploads/1/511/19058511.jpg', 'Refrigerante de 2 L.', 15);
 
+
 -- --------------------------------------------------------
 
 --
@@ -87,6 +91,7 @@ CREATE TABLE `pedido` (
   `id` int(11) NOT NULL,
   `nome` text NOT NULL,
   `telefone` text NOT NULL,
+
   `endereco` text NOT NULL,
   `complemento` text NOT NULL,
   `id_pizza` int(11) NOT NULL,
@@ -106,9 +111,11 @@ CREATE TABLE `pizza` (
   `preco` varchar(10) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
+
 -- --------------------------------------------------------
 
 --
+
 -- Estrutura da tabela `saborpizza`
 --
 
@@ -164,6 +171,7 @@ ALTER TABLE `bebidas`
 --
 -- Índices para tabela `contato`
 --
+
 ALTER TABLE `contato`
   ADD PRIMARY KEY (`id`);
 
@@ -180,22 +188,26 @@ ALTER TABLE `pizza`
   ADD PRIMARY KEY (`id`);
 
 --
+
 -- Índices para tabela `saborpizza`
 --
 ALTER TABLE `saborpizza`
   ADD PRIMARY KEY (`id`);
 
 --
+
 -- AUTO_INCREMENT de tabelas despejadas
 --
 
 --
+
 -- AUTO_INCREMENT de tabela `bebidas`
 --
 ALTER TABLE `bebidas`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
+
 -- AUTO_INCREMENT de tabela `contato`
 --
 ALTER TABLE `contato`
@@ -205,12 +217,14 @@ ALTER TABLE `contato`
 -- AUTO_INCREMENT de tabela `pedido`
 --
 ALTER TABLE `pedido`
+
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de tabela `pizza`
 --
 ALTER TABLE `pizza`
+
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
@@ -223,3 +237,4 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+

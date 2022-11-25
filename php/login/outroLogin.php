@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-
 <html>
 <head>
     <meta charset="UTF-8">
@@ -63,15 +61,12 @@
               <a class="nav-link active fs-5 fw-light text-white" href="../clientPages/contato.html">Fale Conosco</a>
             </li>
             <li class="nav-item align-self-start">
-
               <a class="nav-link active fw-light text-white" href="../login/Login.php"><img src="../../assets/user.png" style="height: 32px;" ></a>
-
             </li>
   
           </ul>
       </div>
   </nav>
-
   <main class="p-5">
     <div class="container icard-color d-flex flex-column align-items-center" style="width:60%">
         <div>
@@ -86,5 +81,4 @@
   </main>
 
 </body>
-
 </html>

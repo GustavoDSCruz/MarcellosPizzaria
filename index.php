@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -65,6 +66,7 @@
           Bem vindo a Pizzaria Marcellos!
       </h2><br>
 
+
       <h4>Recomendações<hr></h4>
 
 
@@ -72,30 +74,36 @@
        <section class="py-5 d-inline-flex align-self-center" id="main-promotion">
         <div class="d-inline-flex justify-content-center ">
           <img src="assets/banner-home.jpg" class="banner-home img-fluid">
+
           <div class="d-flex flex-column justify-content-center align-items-center card-home p-3 rounded-end my-3" style="width: 18rem;">
               <div class="card-body">
                 <h5 class="banner-home-title fs-1 fw-bold text-center text-white py-4">Marguerita</h5>
                   <p class="banner-home-text fs-2 text-center text-white">
+
                       A clássica Italiana por apenas R$25,00
                   </p>                        
               </div>
               <div class="card-body d-flex justify-content-center align-items-start pb-5">
                 <button type="button" class="banner-home-button btn bg-white BannerBTN" ><a class="text-black text-decoration-none fs-3" href="php/clientPages/comprar.php">Comprar</a></button>
+
               </div>
           </div>
         </div>
       </section>
       <!-- End of Home Introduction -->
 
+
       <h2 class="fs-2 fw-semibold">Promoções da semana<hr></h2>
 
       
       <section class="cards-slider">
+
         <div class="container swiper">
 
           <div class="slide-container">
 
             <div class="card-wrapper swiper-wrapper">
+
 
               <div class="card  swiper-slide d-flex flex-column justify-content-between align-items-center border-0 rounded-5">
 
@@ -105,11 +113,13 @@
 
                 <div class="profile-details">
 
+
                   <div class="name-job">
                     <h4 class="fs-6 fw-normal text-center ">Segunda</h4>
                     <h3 class="fs-3 fw-semibold text-center ">Pizza de Calabresa</h3>
                   </div>
                 </div>
+
                 <button type="submit" class="Cardbtn btn btn-dark mt-5" style="width: 100%;" ><a class="fs-4 text-white" style="text-decoration:none;" href="php/clientPages/comprar.php">Comprar</a></button>
               </div>
               <div class="card swiper-slide d-flex flex-column justify-content-between align-items-center border-0 rounded-5">
@@ -117,6 +127,7 @@
               <div class="image-box d">
                   <img src="assets/home-slider/terca.png"/>
                 </div>
+
 
                 <div class="profile-details">
                   
@@ -126,6 +137,7 @@
                   </div>
                 </div>
 
+
                 <button type="submit" class="Cardbtn btn btn-dark mt-5" style="width: 100%;" ><a class="fs-4 text-white" style="text-decoration:none;" href="php/clientPages/comprar.php">Comprar</a></button>
               </div>
               <div class="card swiper-slide d-flex flex-column justify-content-between align-items-center border-0 rounded-5">
@@ -133,6 +145,7 @@
               <div class="image-box">
                   <img src="assets/home-slider/quarta.png"/>
                 </div>
+
 
                 <div class="profile-details">
                   
@@ -142,6 +155,7 @@
                   </div>
                 </div>
 
+
                 <button type="submit" class="Cardbtn btn btn-dark mt-5" style="width: 100%;" ><a class="fs-4 text-white" style="text-decoration:none;" href="php/clientPages/comprar.php">Comprar</a></button>
               </div>
               <div class="card swiper-slide d-flex flex-column justify-content-between align-items-center border-0 rounded-5">
@@ -149,6 +163,7 @@
               <div class="image-box">
                   <img src="assets/home-slider/quinta.png"/>
                 </div>
+
 
                 <div class="profile-details">
                   
@@ -158,6 +173,7 @@
                   </div>
                 </div>
 
+
                 <button type="submit" class="Cardbtn btn btn-dark mt-5" style="width: 100%;" ><a class="fs-4 text-white" style="text-decoration:none;" href="php/clientPages/comprar.php">Comprar</a></button>
               </div>
               <div class="card swiper-slide d-flex flex-column justify-content-between align-items-center border-0 rounded-5">
@@ -165,6 +181,7 @@
               <div class="image-box">
                   <img src="assets/home-slider/sexta.png"/>
                 </div>
+
 
                 <div class="profile-details">
                   
@@ -174,6 +191,7 @@
                   </div>
                 </div>
 
+
                 <button type="submit" class="Cardbtn btn btn-dark mt-5" style="width: 100%;" ><a class="fs-4 text-white" style="text-decoration:none;" href="php/clientPages/comprar.php">Comprar</a></button>
               </div>
               <div class="card swiper-slide d-flex flex-column justify-content-between align-items-center border-0 rounded-5">
@@ -181,6 +199,7 @@
               <div class="image-box">
                   <img src="assets/home-slider/sabado.png"/>
                 </div>
+
 
                 <div class="profile-details">
                   
@@ -190,6 +209,7 @@
                   </div>
                 </div>
 
+
                 <button type="submit" class="Cardbtn btn btn-dark mt-5" style="width: 100%;" ><a class="fs-4 text-white" style="text-decoration:none;" href="php/clientPages/comprar.php">Comprar</a></button>
               </div>
               <div class="card swiper-slide d-flex flex-column justify-content-between align-items-center border-0 rounded-5">
@@ -197,6 +217,7 @@
               <div class="image-box">
                   <img src="assets/home-slider/domingo.png"/>
                 </div>
+
                 <div class="profile-details">
                   
                   <div class="name-job">
@@ -205,7 +226,9 @@
                   </div>
                 </div>
 
+
                 <button type="submit" class="Cardbtn btn btn-dark mt-5" style="width: 100%;" ><a class="fs-4 text-white" style="text-decoration:none;" href="php/clientPages/comprar.php">Comprar</a></button>
+
               </div>
               
             </div>
@@ -229,7 +252,9 @@
       <!-- Footer -->
       <footer
               class="text-center container-fluid  text-lg-start text-white"
+
               style="background-color: #0FBA59"
+
               >
         <!-- Grid container -->
         <div class="container p-3 pb-0">

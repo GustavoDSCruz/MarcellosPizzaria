@@ -16,11 +16,14 @@ main {
 hr {
     border: 0;
     height: 2px;
+
     background: linear-gradient(to right,#000000,#000000 ,#00000000);
 }
 
 .bg-green-marcellos {
     background-color: #0FBA59;
+
+
 }
 
 .gray {
@@ -28,8 +31,10 @@ hr {
 }
 
 .banner-home {
+
     height: auto;
     width: 75%; 
+
     object-fit: cover;
     border-radius: 15px 0px 0px 15px;    
 
@@ -71,6 +76,7 @@ hr {
 .card-home {
     background-color: #B41328;
     box-shadow: 0px 8px 10px #0000009d;
+
 }
 
 .links-footer a {
@@ -118,9 +124,11 @@ hr {
     .card-contato {
         width:100%;
     }
+
     .banner-home{
         width: 55%;
     }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -139,8 +147,5 @@ hr {
     .memberCardInherit {
         width: 60vw;
     }
+
 }
-
-
-
-
