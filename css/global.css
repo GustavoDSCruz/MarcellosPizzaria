@@ -16,11 +16,11 @@ main {
 hr {
     border: 0;
     height: 2px;
-    background: linear-gradient(90deg, black, white, white);
+    background: linear-gradient(to right,#000000,#000000 ,#00000000);
 }
 
 .bg-green-marcellos {
-    background-color: #0C9A4D;
+    background-color: #0FBA59;
 }
 
 .gray {
@@ -28,9 +28,28 @@ hr {
 }
 
 .banner-home {
-    height: auto; 
-    width: 55%; 
+    height: auto;
+    width: 75%; 
     object-fit: cover;
+    border-radius: 15px 0px 0px 15px;    
+
+}
+
+.BannerBTN{
+    padding: 10px 50px 10px 50px ;
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px #0000009d;
+} 
+
+.Cardbtn{
+    border-radius: 0 0 20px 20px;    
+}
+
+.CompraBTN{
+    border:none;
+    padding: 10px 70px 10px 70px ;
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px #0000009d;
 }
 
 .user-img {
@@ -42,6 +61,7 @@ hr {
     height: 60vh; 
     width: 100%; 
     object-fit: cover;
+    
 }
 
 .icard-color {
@@ -50,6 +70,7 @@ hr {
 
 .card-home {
     background-color: #B41328;
+    box-shadow: 0px 8px 10px #0000009d;
 }
 
 .links-footer a {
@@ -97,6 +118,9 @@ hr {
     .card-contato {
         width:100%;
     }
+    .banner-home{
+        width: 55%;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -116,3 +140,7 @@ hr {
         width: 60vw;
     }
 }
+
+
+
+

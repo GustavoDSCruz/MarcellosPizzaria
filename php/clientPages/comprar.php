@@ -60,13 +60,26 @@
       </form>--> 
     </div>
   </nav>
-  <?php 
-             include_once '../models/pizza.php';
-             $p= new pizza();
+  
+  <main class="p-5 d-flex flex-column align-items-center">
+  <h5 class="fs-5 fw-light text-center">Compra</h5>
+
+    <h2 class="fs-1 fw-bolder text-center">
+    Realize seu Pedido!<hr></h2><br>
+
+
+    <?php 
+             include_once '../models/saborPizza.php';
+             $p= new saborpizza();
              $pro_bd=$p->listar();
         ?>
 
-  <main class="p-5 d-flex flex-column align-items-center">
+    <?php 
+      include_once '../models/bebida.php';
+      $p = new bebida();
+      $beb_bd=$p->listar();
+
+      ?>
         <form name="compra" action="" method="POST" class="card-contato card icard-color py-5 d-flex flex-column align-items-center">
           <div class="text-center  border-bottom border-white" style="width: 80%;" >
             <h5 class="card-title text-white fs-3 fw-semibold ">Finalizar Pedido</h5>
@@ -81,30 +94,59 @@
                   <input type="text" name="txttel" class="form-control" required placeholder="Exemplo: (11)999999999">
                 </div>
                 <div class="mt-4">
-                  <label class="form-label text-white">Cep</label>
-                  <input type="text" name="txtcep" class="form-control" required placeholder="Exemplo: 09999999">
+                  <label class="form-label text-white">CPF</label>
+                  <input type="text" name="txtcpf" class="form-control" required placeholder="Exemplo: 21312345530">
+                </div>
+                <div class="mt-4">
+                  <label class="form-label text-white">Endereco</label>
+                  <input type="text" name="txtEnd" class="form-control" required placeholder="Exemplo: Rua Solimões, bairro Lima">
                 </div>
                 <div class="mt-4">
                   <label class="form-label text-white">Complemento</label>
                   <input type="text" name="txtcomp" class="form-control" required placeholder="Número 37, Bloco A, Apartamento 03">
                 </div>
                 
+
                 <div class="mt-4">
-                    <label class="form-label text-white">Opções de Pizza</label>
-                    <select class="form-select" name="optPizzas" aria-label="Default select example">
+                <p class="form-label text-white fw-semibold">Monte sua pizza...</p>
+
+                    <label class="form-label text-white">Metade 1</label>
+                    <select class="form-select" name="txtSabor1" aria-label="Default select example">
                         <option selected>Escolha uma pizza...</option>
                         <?php foreach($pro_bd as $pro_mostrar)
                         { ?>
-                            <option value="<?php echo $pro_mostrar[0];?>"><?php echo $pro_mostrar[1]; ?></option>
-                            <option value="<?php echo $pro_mostrar[0];?>"><?php echo  $pro_mostrar[1]; ?></option>
+                            <option value="<?php echo $pro_mostrar[4];?>"><?php echo $pro_mostrar[1]; ?></option>
                         <?php } ?>
                     </select>
                 </div>
-                
+                <div class="mt-4">
+                    <label class="form-label text-white">Metade 2</label>
+                    <select class="form-select" name="txtSabor2" aria-label="Default select example">
+                        <option selected>Escolha uma pizza...</option>
+                        <?php foreach($pro_bd as $pro_mostrar)
+                        { ?>
+                            <option value="<?php echo $pro_mostrar[4];?>"><?php echo $pro_mostrar[1]; ?></option>
+                        <?php } ?>
+                    </select>
+                </div>
+                <div class="mt-4">
+                  <label class="form-label text-white">Bebida</label>
+                  <select name="txtBebida" class="form-select" aria-label="Default select example">
+                  <option selected>Escolha uma bebida...</option>
+                        <?php foreach($beb_bd as $pro_mostrar)
+                        { ?>
+                            <option value="<?php echo $pro_mostrar[4];?>"><?php echo $pro_mostrar[1]; ?></option>
+                        <?php } ?>
+                    </select>
+                  </select>
+                </div>
+                <div class="mt-4">
+                  <p></p>
+                </div>
             </div>
-          <input type="submit" name="btnenviar" class="btn btn-dark mt-5" value="Enviar" style="width: 50%;">
+          <input type="submit" name="btnenviar" class="CompraBTN btn btn-dark mt-5" value="Enviar" style="width: 50%;">
           
-          
+            
         </form> 
         <?php
 	
@@ -119,11 +161,14 @@
           
               $pro->setNome($txtnome);
               $pro->setTelefone($txttel);
-              $pro->setCep($txtcep);
+              $pro->setCpf($txtcpf);
+              $pro->setEndereco($txtEnd);
               $pro->setComplemento($txtcomp);
-              $pro->setId_pizza($optPizzas);
+              $pro->setP_saborPizza1($txtSabor1);
+              $pro->setP_saborPizza2($txtSabor2);
+              $pro->setPreco($txtBebida);
           
-              echo "<h1><br><br>" . $pro->cadastrar() . "</h1>";
+              echo "<h1><br><br>" . $pro->cadastrar() . " Preço: R$". ((intval($pro->getP_saborPizza1()) + intval($pro->getP_saborPizza2()))/2 + intval($pro->getPreco())) . ",00" . "</h1><br>" . "<h2> Pagamento com entregador e contato por telefone!</h2>" ;
           }
 	
         ?>
@@ -131,7 +176,7 @@
   </main> 
   <footer
               class="text-center container-fluid  text-lg-start text-white"
-              style="background-color: #0C9A4D"
+              style="background-color: #0FBA59"
               >
         <!-- Grid container -->
         <div class="container p-3 pb-0">
@@ -198,7 +243,8 @@
           <!-- Section: Copyright -->
         </div>
         <!-- Grid container -->
-    </footer> 
-    
+  </footer> 
 </body>
+  
+    
 </html>

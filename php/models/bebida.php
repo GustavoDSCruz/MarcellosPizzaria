@@ -1,7 +1,7 @@
 <?php
     include_once '../conexao/conectar.php';
 
-    class saborpizza
+    class bebida
     {
         private $id;
         private $nome;
@@ -46,7 +46,7 @@
 	        try
 	        {
 	        	$this-> conn = new Conectar();
-	        	$sql = $this->conn->query ("select * from saborpizza order by id");
+	        	$sql = $this->conn->query ("select * from bebidas order by id");
 	        	$sql->execute();
 	        	return $sql->fetchAll();
 	        	$this->conn = null;
