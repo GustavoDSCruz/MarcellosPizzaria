@@ -84,7 +84,7 @@
 
           <div class="card swiper-slide d-flex flex-column justify-content-between align-items-center icard-color border-0 rounded-5" style="width: 18rem;">
 
-          <div class="image-box">
+          <div class="image-box" style="height: 50%; width: 100%;">
                 <img src="<?php echo $pro_mostrar[2]; ?> " >             
             </div>
 
