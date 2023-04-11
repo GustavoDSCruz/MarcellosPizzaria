@@ -1,5 +1,4 @@
 # MarcellosPizzaria
-Entre no https://marcellospizzaria.netlify.app para ver a atual versão
 
 segunda - calabresa
 terca - 4 queijos
