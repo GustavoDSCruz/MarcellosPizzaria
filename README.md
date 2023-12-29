@@ -1,12 +1,6 @@
 # MarcellosPizzaria
 
-segunda - calabresa
-terca - 4 queijos
-quarta - brocolis
-quinta - marguerita
-sexta - portuguesa
-sabado - atum
-domingo - moda do chefe
+Entre no https://marcellospizzaria.netlify.app para ver a atual versão
 
 Requisitos Funcionais:
 RF001	Manter Cliente.	
